@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage ('initializing') {
+        stage('initializing') {
 
             sh 'echo initializing'
         }
 
-        stage ('deploy to testenv') {
+        stage('deploy to testenv') {
 
             steps {
                  sh 'echo deploy to testenv'
@@ -15,7 +15,7 @@ pipeline {
             }
 
 
-        stage ('Deploy for QA') {
+        stage('Deploy for QA') {
             when {
                   branch 'QA'
                   }
