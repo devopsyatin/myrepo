@@ -3,8 +3,10 @@ pipeline {
 
     stages {
         stage('initializing') {
-
+            steps {
+                
             sh 'echo initializing'
+                  }
         }
 
         stage('deploy to testenv') {
