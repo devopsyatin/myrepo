@@ -24,6 +24,9 @@ pipeline {
             steps {
                 sh 'echo deploy QA'
                 }
+            steps {
+                sh 'echo verify QA'
+                  }
             }
         }
      }
