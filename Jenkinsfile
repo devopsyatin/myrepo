@@ -23,6 +23,7 @@ pipeline {
                   }
             steps {
                 sh 'echo deploy QA'
+                sh 'echo verify deploy to QA'
                 }
             }
         }
