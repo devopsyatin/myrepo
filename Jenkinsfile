@@ -19,7 +19,7 @@ pipeline {
         stage('Jira test') {
 
             steps {
-                 jiraDownloadAttachment file: 'https://jira-jenkins-test.atlassian.net/browse/AUT-1', id: 'BIDW', override: false, site: 'jira-jenkins-test.atlassian.net'
+                 jiraDownloadAttachment file: 'BIDW.JENKINSTEST_1.TEST_VIEW.VIEW', id: 'BIDW', override: false, site: 'jira-jenkins-test.atlassian.net'
                 }
             }
 
