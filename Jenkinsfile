@@ -15,7 +15,13 @@ pipeline {
                  sh 'echo deploy to testenv'
                 }
             }
+        
+        stage('Jira test') {
 
+            steps {
+                 jiraDownloadAttachment file: 'https://jira-jenkins-test.atlassian.net/browse/AUT-1', id: 'BIDW', override: false, site: 'jira-jenkins-test.atlassian.net'
+                }
+            }
 
         stage('Deploy for QA') {
             when {
